@@ -1,6 +1,6 @@
 # epicchainjdk: A Java/Kotlin/Android Development Toolkit for the EpicChain Blockchain
 
-epicchainjdk is a development toolkit that provides easy and reliable tools to build EpicChain dApps and Smart Contracts using the Java platform (Java, Kotlin, Android). It is an open-source project developed by the community and maintained by [AxLabs](https://axlabs.com).
+epicchainjdk is a development toolkit that provides easy and reliable tools to build EpicChain dApps and Smart Contracts using the Java platform (Java, Kotlin, Android).
 
 
 
