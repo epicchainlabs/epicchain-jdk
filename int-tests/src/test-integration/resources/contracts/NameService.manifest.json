@@ -1,0 +1,441 @@
+{
+  "name": "NameService",
+  "groups": [],
+  "features": {},
+  "supportedstandards": [
+    "NEP-11"
+  ],
+  "abi": {
+    "methods": [
+      {
+        "name": "symbol",
+        "offset": 0,
+        "safe": true,
+        "returntype": "String",
+        "parameters": []
+      },
+      {
+        "name": "decimals",
+        "offset": 6,
+        "safe": true,
+        "returntype": "Integer",
+        "parameters": []
+      },
+      {
+        "name": "totalSupply",
+        "offset": 8,
+        "safe": true,
+        "returntype": "Integer",
+        "parameters": []
+      },
+      {
+        "name": "ownerOf",
+        "offset": 53,
+        "safe": true,
+        "returntype": "Hash160",
+        "parameters": [
+          {
+            "name": "tokenId",
+            "type": "ByteArray"
+          }
+        ]
+      },
+      {
+        "name": "properties",
+        "offset": 184,
+        "safe": true,
+        "returntype": "Map",
+        "parameters": [
+          {
+            "name": "tokenId",
+            "type": "ByteArray"
+          }
+        ]
+      },
+      {
+        "name": "balanceOf",
+        "offset": 341,
+        "safe": true,
+        "returntype": "Integer",
+        "parameters": [
+          {
+            "name": "owner",
+            "type": "Hash160"
+          }
+        ]
+      },
+      {
+        "name": "tokens",
+        "offset": 453,
+        "safe": true,
+        "returntype": "InteropInterface",
+        "parameters": []
+      },
+      {
+        "name": "tokensOf",
+        "offset": 494,
+        "safe": true,
+        "returntype": "InteropInterface",
+        "parameters": [
+          {
+            "name": "owner",
+            "type": "Hash160"
+          }
+        ]
+      },
+      {
+        "name": "transfer",
+        "offset": 600,
+        "safe": false,
+        "returntype": "Boolean",
+        "parameters": [
+          {
+            "name": "to",
+            "type": "Hash160"
+          },
+          {
+            "name": "tokenId",
+            "type": "ByteArray"
+          },
+          {
+            "name": "data",
+            "type": "Any"
+          }
+        ]
+      },
+      {
+        "name": "update",
+        "offset": 1121,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "nef",
+            "type": "ByteArray"
+          },
+          {
+            "name": "manifest",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "addRoot",
+        "offset": 1291,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "root",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "roots",
+        "offset": 1725,
+        "safe": true,
+        "returntype": "InteropInterface",
+        "parameters": []
+      },
+      {
+        "name": "setPrice",
+        "offset": 1757,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "priceList",
+            "type": "Array"
+          }
+        ]
+      },
+      {
+        "name": "getPrice",
+        "offset": 1952,
+        "safe": true,
+        "returntype": "Integer",
+        "parameters": [
+          {
+            "name": "length",
+            "type": "Integer"
+          }
+        ]
+      },
+      {
+        "name": "isAvailable",
+        "offset": 2017,
+        "safe": true,
+        "returntype": "Boolean",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "register",
+        "offset": 2405,
+        "safe": false,
+        "returntype": "Boolean",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "owner",
+            "type": "Hash160"
+          }
+        ]
+      },
+      {
+        "name": "renew",
+        "offset": 3113,
+        "safe": false,
+        "returntype": "Integer",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "renew",
+        "offset": 3123,
+        "safe": false,
+        "returntype": "Integer",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "years",
+            "type": "Integer"
+          }
+        ]
+      },
+      {
+        "name": "setAdmin",
+        "offset": 3697,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "admin",
+            "type": "Hash160"
+          }
+        ]
+      },
+      {
+        "name": "setRecord",
+        "offset": 3921,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "type",
+            "type": "Integer"
+          },
+          {
+            "name": "data",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "getRecord",
+        "offset": 5877,
+        "safe": true,
+        "returntype": "String",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "type",
+            "type": "Integer"
+          }
+        ]
+      },
+      {
+        "name": "getAllRecords",
+        "offset": 6201,
+        "safe": true,
+        "returntype": "InteropInterface",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "deleteRecord",
+        "offset": 6281,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "type",
+            "type": "Integer"
+          }
+        ]
+      },
+      {
+        "name": "resolve",
+        "offset": 6565,
+        "safe": true,
+        "returntype": "String",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "type",
+            "type": "Integer"
+          }
+        ]
+      },
+      {
+        "name": "_deploy",
+        "offset": 7152,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": [
+          {
+            "name": "data",
+            "type": "Any"
+          },
+          {
+            "name": "update",
+            "type": "Boolean"
+          }
+        ]
+      },
+      {
+        "name": "_initialize",
+        "offset": 7514,
+        "safe": false,
+        "returntype": "Void",
+        "parameters": []
+      }
+    ],
+    "events": [
+      {
+        "name": "Transfer",
+        "parameters": [
+          {
+            "name": "from",
+            "type": "Hash160"
+          },
+          {
+            "name": "to",
+            "type": "Hash160"
+          },
+          {
+            "name": "amount",
+            "type": "Integer"
+          },
+          {
+            "name": "tokenId",
+            "type": "ByteArray"
+          }
+        ]
+      },
+      {
+        "name": "SetAdmin",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "oldAdmin",
+            "type": "Hash160"
+          },
+          {
+            "name": "newAdmin",
+            "type": "Hash160"
+          }
+        ]
+      },
+      {
+        "name": "Renew",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "name": "oldExpiration",
+            "type": "Integer"
+          },
+          {
+            "name": "newExpiration",
+            "type": "Integer"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": [
+    {
+      "contract": "0x726cb6e0cd8628a1350a611384688911ab75f51b",
+      "methods": [
+        "ripemd160"
+      ]
+    },
+    {
+      "contract": "0xacce6fd80d44e1796aa0c2c625e9e4e0ce39efc0",
+      "methods": [
+        "atoi",
+        "deserialize",
+        "serialize",
+        "stringSplit"
+      ]
+    },
+    {
+      "contract": "0xef4073a0f2b305a38ec4050e4d3d28bc40ea63f5",
+      "methods": [
+        "getCommittee"
+      ]
+    },
+    {
+      "contract": "0xfffdc93764dbaddd97c48f252a53ea4643faa3fd",
+      "methods": [
+        "getContract",
+        "update"
+      ]
+    },
+    {
+      "contract": "*",
+      "methods": [
+        "onNEP11Payment"
+      ]
+    }
+  ],
+  "trusts": [],
+  "extra": {
+    "Author": "The Neo Project",
+    "Email": "dev@neo.org",
+    "Description": "Neo Name Service"
+  }
+}

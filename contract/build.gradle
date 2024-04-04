@@ -1,0 +1,7 @@
+description 'neow3j: Smart Contracts'
+
+dependencies {
+    compile project(':core')
+
+    testImplementation project(':test-tools')
+}
